@@ -1,0 +1,36 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="AppTheme" parent="android:style/Theme.Black.NoTitleBar.Fullscreen" />
+	
+	<!--Splash screen -->
+	<style name="Header" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/header_large</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    
+	<style name="Header.small" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/header_medium</item>
+    </style>
+    
+	<style name="Header.medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">@dimen/header_medium</item>
+        <item name="android:shadowColor">#650f0f</item>  
+        <item name="android:shadowRadius">1</item>  
+        <item name="android:shadowDx">1</item>  
+        <item name="android:shadowDy">1</item>
+        <item name="android:padding">15dp</item>
+    </style>
+    
+	 <style name="Button.medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/button_medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:shadowColor">#650f0f</item>  
+        <item name="android:shadowRadius">1</item>  
+        <item name="android:shadowDx">1</item>  
+        <item name="android:shadowDy">1</item>
+        <item name="android:padding">15dp</item>
+    </style>
+	
+</resources>

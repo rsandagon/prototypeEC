@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="locations">
+		<item> English</item> 
+		<item> Chinese - 中文</item> 
+		<item> Japanese - 日本語</item> 
+		<item> Korean - 한국어</item> 
+		<item> Portuguese - português</item> 
+		<item> Spanish - español</item> 
+		<item> Turkish - Türkçe</item> 
+		<item> Vietnamese - Tiếng Việt</item> 
+		<item> Afrikaans - Afrikaans</item> 
+		<item> Albanian - shqipe</item> 
+		<item> Arabic - العربية</item> 
+		<item> Armenian - Հայերէն</item> 
+		<item> Balinese</item> 
+		<item> Basque - euskara</item> 
+		<item> Bengali - বাংলা</item> 
+		<item> Bosnian - bosanski</item> 
+		<item> Bulgarian - български</item> 
+		<item> Burmese - ဗမာ</item> 
+		<item> Catalan - català</item> 
+		<item> Chinese - 中文</item> 
+		<item> Croatian - hrvatski</item> 
+		<item> Czech - čeština</item> 
+		<item> Danish - dansk</item> 
+		<item> Dutch - Nederlands</item> 
+		<item> English (Australian)</item> 
+		<item> English (British)</item> 
+		<item> English (Canadian)</item> 
+		<item> English (U.S.)</item> 
+		<item> Estonian - eesti</item> 
+		<item> Fijian</item> 
+		<item> Filipino - Filipino</item> 
+		<item> Finnish - suomi</item> 
+		<item> Flemish - Vlaams</item> 
+		<item> French (Canadian) - français canadien</item> 
+		<item> French (Swiss) - français suisse</item> 
+		<item> French - français</item> 
+		<item> Georgian - ქართული</item> 
+		<item> German (Austrian) - Österreichisches Deutsch</item> 
+		<item> German - Deutsch</item> 
+		<item> Greek - Ελληνικά</item> 
+		<item> Hebrew - עברית</item> 
+		<item> Hindi - हिन्दी</item> 
+		<item> Hungarian - magyar</item> 
+		<item> Icelandic - íslenska</item> 
+		<item> Indonesian - Bahasa Indonesia</item> 
+		<item> Irish - Gaeilge</item> 
+		<item> Italian - italiano</item> 
+		<item> Japanese - 日本語</item> 
+		<item> Javanese</item> 
+		<item> Kashmiri</item> 
+		<item> Kazakh - Қазақ</item> 
+		<item> Khmer - ភាសាខ្មែរ</item> 
+		<item> Korean - 한국어</item> 
+		<item> Kurdish - كوردی</item> 
+		<item> Latin - ລາແຕັງ</item> 
+		<item> Latvian - latviešu</item> 
+		<item> Lithuanian - lietuvių</item> 
+		<item> Macedonian - македонски</item> 
+		<item> Malay - Bahasa Melayu</item> 
+		<item> Mongolian - монгол</item> 
+		<item> Nepali - नेपाली</item> 
+		<item> Norwegian - norsk</item> 
+		<item> Persian - فارسی</item> 
+		<item> Polish - polski</item> 
+		<item> Portuguese (Brazilian) - português do Brasil</item> 
+		<item> Portuguese - português</item> 
+		<item> Punjabi - ਪੰਜਾਬੀ</item> 
+		<item> Romanian - română</item> 
+		<item> Russian - русский</item> 
+		<item> Serbian - Српски</item> 
+		<item> Serbo-Croatian - Srpskohrvatski</item> 
+		<item> Slavic Language</item> 
+		<item> Slovak - slovenčina</item> 
+		<item> Slovenian - slovenščina</item> 
+		<item> Spanish (Iberian) - español de España</item> 
+		<item> Spanish (Latin American) - español latinoamericano</item> 
+		<item> Spanish - español</item> 
+		<item> Swahili - Kiswahili</item> 
+		<item> Swedish - svenska</item> 
+		<item> Swiss German - Schwiizertüütsch</item> 
+		<item> Tamil - தமிழ்</item> 
+		<item> Telugu - తెలుగు</item> 
+		<item> Thai - ไทย</item> 
+		<item> Turkish - Türkçe</item> 
+		<item> Ukrainian - українська</item> 
+		<item> Urdu - اردو</item> 
+		<item> Uzbek - Ўзбек</item> 
+		<item> Vietnamese - Tiếng Việt</item> 
+		<item> Other Language</item> 
+	</string-array>
+</resources>

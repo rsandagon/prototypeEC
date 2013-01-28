@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">EnglishCentral</string>
+	<string name="register_its_free">Register. It\'s Free!</string>
+	<string name="send_email">Send me email updates</string>
+	<string name="login_facebook">Login with Facebook</string>
+	<string name="register_email">Register with Email</string>
+	<string name="select_language">Select Language:</string>
+</resources>

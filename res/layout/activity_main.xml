@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@drawable/splash_screen_selector" >
+
+    <RelativeLayout 
+        android:id="@+id/header_layout"
+	    android:background="@drawable/header_screen" 
+	    android:layout_height="50dp"
+	    android:layout_width="match_parent"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentTop="true"
+	    />
+    
+    <ImageView 
+	    android:id="@+id/header_shadow"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:src="@drawable/top_bar_shadow"
+		android:layout_below="@id/header_layout"
+		android:contentDescription="@+string/desc"
+        />
+    
+    <ImageView 
+	    android:id="@+id/main_logo_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="10dp"
+		android:src="@drawable/logo_title"
+		android:contentDescription="@+string/desc"
+        />
+    
+    <ImageView 
+	    android:id="@+id/register_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@+id/main_logo_title"
+		android:src="@drawable/register"
+		android:layout_marginTop="40dp"
+		android:layout_marginBottom="40dp"
+		android:contentDescription="@+string/desc"
+        />
+    
+    <TextView 
+        android:id="@+id/select_language"
+	    style="@style/Header.medium"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:text="@string/select_language"
+	    android:layout_below="@id/register_title"
+	    android:layout_alignParentLeft="true"
+	    />
+    
+	<com.englishcentral.app.widget.LanguageSpinner 
+	    android:id="@+id/language_spinner"
+	    android:background="@drawable/login_button"
+	    style="@style/Button.medium"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:entries="@array/locations"
+	    android:prompt="@string/select_language"
+	    android:layout_below="@+id/select_language"
+	    />
+	
+	 <ImageView 
+	    android:id="@+id/divider"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/language_spinner"
+		android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+		android:layout_marginTop="20dp"
+		android:layout_marginBottom="20dp"
+		android:src="@drawable/line_bar"
+		android:contentDescription="@+string/desc"
+        />
+	
+	<Button 
+	    android:id="@+id/facebook_button"
+		android:background="@drawable/login_button"
+		style="@style/Button.medium"
+	    android:drawableLeft="@drawable/facebook"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="20dp"
+		android:layout_marginBottom="10dp"
+	    android:text="@string/login_facebook" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@id/divider"
+	    android:contentDescription="@+string/desc"
+	    />
+	<Button 
+	    android:id="@+id/register_email"
+		android:background="@drawable/login_button"
+		style="@style/Button.medium"
+	    android:drawableLeft="@drawable/email"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:text="@string/register_email" 
+	    android:layout_centerHorizontal="true"
+		android:layout_below="@id/facebook_button"
+		android:contentDescription="@+string/desc"
+	    />
+			
+	<CheckBox 
+	    android:layout_marginBottom="10dp"
+	    style="@style/Header.small"
+	    android:button="@drawable/login_checkbox_selector"
+	    android:id="@+id/send_email_checkbox"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"
+		android:layout_below="@id/register_email"
+		android:text="@string/send_email"
+	    />
+
+</RelativeLayout>
