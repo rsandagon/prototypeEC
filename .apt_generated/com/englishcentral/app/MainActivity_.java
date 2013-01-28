@@ -38,11 +38,11 @@ public final class MainActivity_
     }
 
     private void afterSetContentView_() {
-        divider = ((ImageView) findViewById(id.divider));
         send_email_checkbox = ((TextView) findViewById(id.send_email_checkbox));
-        language_spinner = ((LanguageSpinner) findViewById(id.language_spinner));
         register_email = ((TextView) findViewById(id.register_email));
+        divider = ((ImageView) findViewById(id.divider));
         facebook_button = ((TextView) findViewById(id.facebook_button));
+        language_spinner = ((LanguageSpinner) findViewById(id.language_spinner));
         afterViews();
     }
 

@@ -17,6 +17,7 @@
 	    android:id="@+id/header_shadow"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
+		android:layout_marginBottom="10dp"
 		android:layout_centerHorizontal="true"
 		android:src="@drawable/top_bar_shadow"
 		android:layout_below="@id/header_layout"
@@ -34,43 +35,8 @@
         />
     
     <ImageView 
-	    android:id="@+id/register_title"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-		android:layout_below="@+id/main_logo_title"
-		android:src="@drawable/register"
-		android:layout_marginTop="10dp"
-		android:layout_marginBottom="10dp"
-		android:contentDescription="@+string/desc"
-        />
-    
-    <TextView 
-        android:id="@+id/select_language"
-	    style="@style/Header.medium"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_marginLeft="10dp"
-	    android:text="@string/select_language"
-	    android:layout_below="@id/register_title"
-	    android:layout_alignParentLeft="true"
-	    />
-    
-	<com.englishcentral.app.widget.LanguageSpinner 
-	    android:id="@+id/language_spinner"
-	    android:background="@drawable/login_button"
-	    style="@style/Button.medium"
-	    android:layout_width="wrap_content"
-	    android:layout_height="wrap_content"
-	    android:layout_marginLeft="10dp"
-	    android:entries="@array/locations"
-	    android:prompt="@string/select_language"
-	    android:layout_below="@+id/select_language"
-	    />
-	
-	 <ImageView 
 	    android:id="@+id/divider"
-		android:layout_width="match_parent"
+		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_centerInParent="true"
 		android:layout_marginLeft="10dp"
@@ -79,48 +45,81 @@
 		android:contentDescription="@+string/desc"
         />
 	
-	<Button 
+	<Button
 	    android:id="@+id/facebook_button"
-		android:background="@drawable/login_button"
-		style="@style/Button.medium"
-	    android:drawableLeft="@drawable/facebook"
-	    android:layout_width="wrap_content"
+	    style="@style/Button.medium"
+	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:layout_marginLeft="10dp"
-	    android:layout_marginRight="10dp"
-	    android:layout_marginTop="20dp"
-		android:layout_marginBottom="10dp"
-	    android:text="@string/login_facebook" 
-	    android:layout_centerHorizontal="true"
-	    android:layout_toRightOf="@id/divider"
+	    android:layout_alignRight="@+id/register_email"
 	    android:layout_below="@id/register_title"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_toRightOf="@id/divider"
+	    android:background="@drawable/login_button"
 	    android:contentDescription="@+string/desc"
-	    />
+	    android:drawableLeft="@drawable/facebook"
+	    android:text="@string/login_facebook" />
+
 	<Button 
 	    android:id="@+id/register_email"
 		android:background="@drawable/login_button"
-		style="@style/Button.medium"
+		style="@style/Button"
 	    android:drawableLeft="@drawable/email"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_marginLeft="10dp"
 	    android:layout_marginRight="10dp"
+	    android:layout_marginBottom="10dp"
 	    android:text="@string/register_email" 
 		android:layout_below="@id/facebook_button"
 		android:layout_toRightOf="@id/divider"
 		android:contentDescription="@+string/desc"
 	    />
-			
-	<CheckBox 
-	    style="@style/Header.small"
-	    android:button="@drawable/login_checkbox_selector"
+
+	<ImageView
+	    android:id="@+id/register_title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@id/facebook_button"
+	    android:layout_below="@+id/main_logo_title"
+	    android:layout_marginTop="26dp"
+	    android:layout_marginBottom="15dp"
+	    android:contentDescription="@+string/desc"
+	    android:src="@drawable/register" />
+
+	<CheckBox
 	    android:id="@+id/send_email_checkbox"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content"
-		android:layout_below="@id/register_email"
-		android:layout_toRightOf="@id/divider"
-		android:layout_marginLeft="10dp"
-		android:text="@string/send_email"
-	    />
+	    style="@style/Header.small"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="5dp"
+	    android:layout_below="@id/register_email"
+	    android:layout_alignLeft="@id/facebook_button"
+	    android:button="@drawable/login_checkbox_selector"
+	    android:text="@string/send_email" />
+
+	<TextView
+	    android:id="@+id/select_language"
+	    style="@style/Header.small"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBottom="@+id/facebook_button"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="10dp"
+	    android:text="@string/select_language" />
+
+	<com.englishcentral.app.widget.LanguageSpinner
+	    android:id="@+id/language_spinner"
+	    style="@style/Button.medium"
+	    android:layout_width="0dp"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@id/register_email"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignRight="@id/divider"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:background="@drawable/login_button"
+	    android:entries="@array/locations"
+	    android:prompt="@string/select_language" />
 
 </RelativeLayout>

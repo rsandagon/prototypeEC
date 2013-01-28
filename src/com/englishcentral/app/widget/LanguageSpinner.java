@@ -35,7 +35,7 @@ public class LanguageSpinner extends Spinner {
 			
 			     public View getDropDownView(int position,  View convertView,  ViewGroup parent) {
 				    	 View v = super.getView(position, convertView, parent);
-				    	 int padding = (int) getResources().getDimension(R.dimen.context_padding);
+				    	 int padding = (int) getResources().getDimension(R.dimen.padding_medium);
 				 		
 			             Typeface externalFont=Typeface.createFromAsset(thisContext.getAssets(), "fonts/Neou-Bold.ttf");
 			             ((TextView) v).setTypeface(externalFont);

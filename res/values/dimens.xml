@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<!--     padding should be uniform -->
+    <dimen name="padding_small">2dp</dimen>
+    <dimen name="padding_medium">5dp</dimen>
+    <dimen name="padding_large">10dp</dimen>
+    <dimen name="padding_x_large">15dp</dimen>
     
-    <dimen name="header_small">12sp</dimen>
+    <dimen name="header_small">14sp</dimen>
     <dimen name="header_medium">18sp</dimen>
     <dimen name="header_large">20sp</dimen>
     
     <dimen name="context_small">12sp</dimen>
     <dimen name="context_medium">14sp</dimen>
-    <dimen name="context_padding">5dp</dimen>
     
-    <dimen name="button_medium">18sp</dimen>
+    <dimen name="button_small">14sp</dimen>
+    <dimen name="button_medium">16sp</dimen>
+    <dimen name="button_large">18sp</dimen>
+    
+    <dimen name="footer_small">10sp</dimen>
+    <dimen name="footer_medium">12sp</dimen>
+    
     
 </resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	 
+	<!-- 	colors from button designs -->
+	<color name="button_base">#be3434</color>
+	
+	<!-- 	colors from button designs -->
+	<color name="font_base">#FFFFFF</color>
+	<color name="font_base.shadow">#650f0f</color>
+	
+	
+	 
+	<!--     basic color based on design -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+	<color name="red">#FF0000</color>
+	<color name="gray">#808080</color>
+</resources>

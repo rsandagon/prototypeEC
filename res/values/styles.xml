@@ -3,34 +3,54 @@
 	
 	<!--Splash screen -->
 	<style name="Header" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">@color/font_base</item>
         <item name="android:textSize">@dimen/header_large</item>
         <item name="android:typeface">monospace</item>
     </style>
     
 	<style name="Header.small" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">@dimen/header_medium</item>
+        <item name="android:textColor">@color/font_base</item>
+        <item name="android:textSize">@dimen/header_small</item>
     </style>
     
 	<style name="Header.medium" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textColor">@color/font_base</item>
         <item name="android:textSize">@dimen/header_medium</item>
-        <item name="android:shadowColor">#650f0f</item>  
+        <item name="android:shadowColor">@color/font_base.shadow</item>  
         <item name="android:shadowRadius">1</item>  
         <item name="android:shadowDx">1</item>  
         <item name="android:shadowDy">1</item>
-        <item name="android:padding">15dp</item>
+        <item name="android:padding">@dimen/padding_large</item>
     </style>
     
-	 <style name="Button.medium" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textSize">@dimen/button_medium</item>
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:shadowColor">#650f0f</item>  
+	 <style name="Button" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/button_small</item>
+        <item name="android:textColor">@color/font_base</item>
+        <item name="android:shadowColor">@color/font_base.shadow</item>  
         <item name="android:shadowRadius">1</item>  
         <item name="android:shadowDx">1</item>  
         <item name="android:shadowDy">1</item>
-        <item name="android:padding">15dp</item>
+        <item name="android:padding">@dimen/padding_medium</item>
+    </style>
+    
+	 <style name="Button.medium" parent="@style/Button">
+        <item name="android:textSize">@dimen/button_medium</item>
+        <item name="android:textColor">@color/font_base</item>
+    </style>
+    
+	 <style name="Button.large" parent="@style/Button">
+        <item name="android:textSize">@dimen/button_large</item>
+        <item name="android:textColor">@color/font_base</item>
     </style>
 	
+	 <style name="Footer.small" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/footer_small</item>
+        <item name="android:textColor">@color/font_base</item>
+        <item name="android:shadowColor">@color/font_base.shadow</item>  
+        <item name="android:shadowRadius">1</item>  
+        <item name="android:shadowDx">1</item>  
+        <item name="android:shadowDy">1</item>
+        <item name="android:padding">@dimen/padding_small</item>
+    </style>
+	 
 </resources>
