@@ -11,6 +11,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,11 +39,41 @@ public final class MainActivity_
     }
 
     private void afterSetContentView_() {
-        send_email_checkbox = ((TextView) findViewById(id.send_email_checkbox));
-        register_email = ((TextView) findViewById(id.register_email));
+        language_spinner = ((LanguageSpinner) findViewById(id.language_spinner));
         divider = ((ImageView) findViewById(id.divider));
         facebook_button = ((TextView) findViewById(id.facebook_button));
-        language_spinner = ((LanguageSpinner) findViewById(id.language_spinner));
+        send_email_checkbox = ((TextView) findViewById(id.send_email_checkbox));
+        register_email = ((TextView) findViewById(id.register_email));
+        {
+            View view = findViewById(id.register_email);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.registerEmail();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = findViewById(id.facebook_button);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.loginToFacebook();
+                    }
+
+                }
+                );
+            }
+        }
         afterViews();
     }
 

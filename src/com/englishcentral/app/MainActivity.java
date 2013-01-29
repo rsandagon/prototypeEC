@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.englishcentral.app.rest.RestClient;
 import com.englishcentral.app.widget.LanguageSpinner;
 import com.googlecode.androidannotations.annotations.AfterViews;
+import com.googlecode.androidannotations.annotations.Click;
 import com.googlecode.androidannotations.annotations.EActivity;
 import com.googlecode.androidannotations.annotations.ViewById;
 import com.googlecode.androidannotations.annotations.res.StringArrayRes;
@@ -64,6 +65,18 @@ public class MainActivity extends Activity
     	
 	}
 
+    @Click(R.id.register_email)
+    void registerEmail(){
+    	//	showDialog here
+    }
+    
+    @Click(R.id.facebook_button)
+    void loginToFacebook(){
+    	//Todo: connect to FB sdk 
+    }
+    
+    
+    
 //	NOTE: Could be handy when we get to use REST call soon.
 //	@UiThread
 //    void doSomethingElseOnUiThread() {
