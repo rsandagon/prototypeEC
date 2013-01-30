@@ -5,11 +5,11 @@
 
 package com.englishcentral.app;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup.LayoutParams;
@@ -17,9 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import com.englishcentral.app.R.array;
 import com.englishcentral.app.R.id;
-import com.englishcentral.app.rest.RestClient_;
 import com.englishcentral.app.widget.LanguageSpinner;
-import com.googlecode.androidannotations.api.SdkVersionHelper;
 
 public final class MainActivity_
     extends MainActivity
@@ -35,30 +33,14 @@ public final class MainActivity_
     private void init_(Bundle savedInstanceState) {
         Resources resources_ = this.getResources();
         items = resources_.getStringArray(array.locations);
-        restClient = new RestClient_();
     }
 
     private void afterSetContentView_() {
         language_spinner = ((LanguageSpinner) findViewById(id.language_spinner));
-        send_email_checkbox = ((TextView) findViewById(id.send_email_checkbox));
+        facebook_button = ((TextView) findViewById(id.facebook_button));
         register_email = ((TextView) findViewById(id.register_email));
         divider = ((ImageView) findViewById(id.divider));
-        facebook_button = ((TextView) findViewById(id.facebook_button));
-        {
-            View view = findViewById(id.facebook_button);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        MainActivity_.this.loginToFacebook();
-                    }
-
-                }
-                );
-            }
-        }
+        send_email_checkbox = ((TextView) findViewById(id.send_email_checkbox));
         {
             View view = findViewById(id.register_email);
             if (view!= null) {
@@ -68,6 +50,21 @@ public final class MainActivity_
                     @Override
                     public void onClick(View view) {
                         MainActivity_.this.registerEmail();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = findViewById(id.facebook_button);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.loginToFacebook();
                     }
 
                 }
@@ -95,14 +92,6 @@ public final class MainActivity_
         afterSetContentView_();
     }
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (((SdkVersionHelper.getSdkInt()< 5)&&(keyCode == KeyEvent.KEYCODE_BACK))&&(event.getRepeatCount() == 0)) {
-            onBackPressed();
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
     public static MainActivity_.IntentBuilder_ intent(Context context) {
         return new MainActivity_.IntentBuilder_(context);
     }
@@ -128,6 +117,14 @@ public final class MainActivity_
 
         public void start() {
             context_.startActivity(intent_);
+        }
+
+        public void startForResult(int requestCode) {
+            if (context_ instanceof Activity) {
+                ((Activity) context_).startActivityForResult(intent_, requestCode);
+            } else {
+                context_.startActivity(intent_);
+            }
         }
 
     }

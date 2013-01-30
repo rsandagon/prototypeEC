@@ -18,22 +18,20 @@
 
     <properties>
         <robolectric.version>1.1</robolectric.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<android.version>4.1.1.4</android.version>
+		<android.platform>16</android.platform>
+		<androidannotations.version>2.7</androidannotations.version>
+		<android-rome-version>1.0.0-r2</android-rome-version>
+		<java.version>1.6</java.version>
     </properties>
 
     <dependencies>
-
-        <dependency>
-            <groupId>org.roboguice</groupId>
-            <artifactId>roboguice</artifactId>
-            <version>1.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.google.inject</groupId>
-            <artifactId>guice</artifactId>
-            <version>2.0-no_aop</version>
-        </dependency>
-        
+		<dependency>
+		    <groupId>ch.acra</groupId>
+		    <artifactId>acra</artifactId>
+		    <version>4.3.0</version>
+		</dependency>
         <dependency>
             <groupId>com.pivotallabs</groupId>
             <artifactId>robolectric</artifactId>
@@ -61,12 +59,27 @@
             <version>2.3.3</version>
             <scope>provided</scope>
         </dependency>
-
+		<dependency>
+			<groupId>com.google.android</groupId>
+			<artifactId>android</artifactId>
+			<version>${android.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.androidannotations</groupId>
+			<artifactId>androidannotations</artifactId>
+			<version>${androidannotations.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.googlecode.androidannotations</groupId>
+			<artifactId>androidannotations-api</artifactId>
+			<version>${androidannotations.version}</version>
+		</dependency>
     </dependencies>
-
+    
     <build>
         <finalName>${project.artifactId}</finalName>
-
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -121,13 +134,13 @@
             <timezone>PST/PDT</timezone>
         </developer>        
     </developers>
-    <licenses>
+    <!--  licenses>
         <license>
             <name>MIT license</name>
             <comments>
                 The MIT License
 
-                Copyright (c) 2011 Pivotal Labs
+                Copyright (c) 2011 Rsandagon Labs
 
                 Permission is hereby granted, free of charge, to any person obtaining a copy
                 of this software and associated documentation files (the "Software"), to deal
@@ -148,5 +161,5 @@
                 THE SOFTWARE.
             </comments>
         </license>
-    </licenses>
+    </licenses -->
 </project>
