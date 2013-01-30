@@ -40,25 +40,10 @@ public final class MainActivity_
 
     private void afterSetContentView_() {
         language_spinner = ((LanguageSpinner) findViewById(id.language_spinner));
-        divider = ((ImageView) findViewById(id.divider));
-        facebook_button = ((TextView) findViewById(id.facebook_button));
         send_email_checkbox = ((TextView) findViewById(id.send_email_checkbox));
         register_email = ((TextView) findViewById(id.register_email));
-        {
-            View view = findViewById(id.register_email);
-            if (view!= null) {
-                view.setOnClickListener(new OnClickListener() {
-
-
-                    @Override
-                    public void onClick(View view) {
-                        MainActivity_.this.registerEmail();
-                    }
-
-                }
-                );
-            }
-        }
+        divider = ((ImageView) findViewById(id.divider));
+        facebook_button = ((TextView) findViewById(id.facebook_button));
         {
             View view = findViewById(id.facebook_button);
             if (view!= null) {
@@ -68,6 +53,21 @@ public final class MainActivity_
                     @Override
                     public void onClick(View view) {
                         MainActivity_.this.loginToFacebook();
+                    }
+
+                }
+                );
+            }
+        }
+        {
+            View view = findViewById(id.register_email);
+            if (view!= null) {
+                view.setOnClickListener(new OnClickListener() {
+
+
+                    @Override
+                    public void onClick(View view) {
+                        MainActivity_.this.registerEmail();
                     }
 
                 }
